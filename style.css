@@ -1,0 +1,409 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  font-family: 'Montserrat', sans-serif;  
+}
+
+.topnav{
+  display:none;
+}
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items:center; 
+  font-family: 'Montserrat', sans-serif;
+  position:fixed;
+  z-index: 1;
+}
+.navbar .logo a{
+  font-size: 3rem;
+  color: #e27802;
+  display: inline-block;
+  padding-left:20px;
+}
+.navbar .navbar-link{
+  color: #e27802;
+  font-size: 1.8em;
+  padding: 50px 50px;
+  position: relative;
+  left: 150px;
+}
+.navbar a:hover{
+  color:#374045;
+  transition: 800ms;
+}
+.navbar a:active{
+  color:#e27802;
+}
+.content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; 
+}
+.filter{
+  width: 100%;
+  height: 800px;
+  background: black;
+  opacity: 0.3;
+  z-index: 0;
+  position:absolute;
+}
+.gorsel{
+  height: 800px;
+  width: 100%;
+  background-image: url(/img/background-1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
+}
+
+.gor1-yazi{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #dddddd;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 3rem;
+}
+.gor1-yazi p{
+  width: 90%;
+  font-style: italic;
+  font-size: 1.6rem;
+}
+.gor1-yazi span{
+  font-size: 1.5rem;
+  font-style: italic;
+}
+#bant1{
+  width: 100%;
+  height: 600px;
+  background-image: url(/img/background-2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.bant1-icerik{
+  width:100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  color: #dddddd;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 2rem;
+}
+.bant1-icerik p{
+  width: 50%;
+}
+.bant1-icerik h2{
+  color: #e27802;
+  margin-bottom: 120px;
+  line-height: 3rem;
+}
+.bant1-icerik span{
+  color: #dddddd;
+}
+#gor2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.card{
+  width: 300px;
+  height: 460px;
+  background-color: #dddddd;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  z-index: 1;
+}
+.card-img img{
+  width: 300px;
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  border-radius: 12px;
+}
+.card-p{
+  width: 100%;
+  height: 200px;
+  font-size: 1rem;
+  padding: 10px;
+  color: #374045;
+}
+.btn{
+  width: 120px;
+  height: 45px;
+  border-style: none;
+  font-size: 1.5rem;
+  border-radius: 6px;
+  border: 1px solid #e27802;
+  background-color: #dddddd;
+  color:#e27802;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif; 
+  cursor: pointer;
+}
+.btn a{
+  text-decoration: none;
+  color:#e27802;
+}
+.btn:hover{
+  background-color: #e27802;
+  color: #dddddd;
+  transition: 800ms;
+}
+.btn:active{
+  background-color: #dddddd;
+  color:#e27802;
+}
+#bant2{
+  width: 100%;
+  background-color: #374045;
+}
+.location{
+  width: 80%;
+  margin:auto;
+  padding: 80px 0;
+}
+.location iframe{
+  width: 100%;
+}
+.contact-us{
+  
+  margin: auto;
+}
+.row{
+  display: flex;
+}
+.contact-col{
+  flex-basis: 48%;
+  margin-bottom: 30px;
+  margin:20px
+}
+.contact-col div{
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.contact-col div .fa{
+  font-size: 28px;
+  color: #dddddd;
+  margin: 10px;
+  margin-right: 30px;
+}
+.contact-col div p{
+  padding: 0;
+  font-family: 'Montserrat', sans-serif; 
+  color: #bbbbbb;
+}
+.contact-col div h5{
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #dddddd;
+  font-weight: 400px;
+}
+.contact-col input, .contact-col textarea{
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 17px;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: 'Montserrat', sans-serif; 
+}
+.contact-btn{
+  width: 160px;
+  height: 60px;
+  border-style: none;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #e27802;
+  background-color: #374045;
+  color:#e27802;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif; 
+  cursor: pointer;
+}
+.contact-btn:hover{
+  background-color: #e27802;
+  color: #dddddd;
+  transition: 800ms;
+}
+.contact-btn:active{
+  background-color: #dddddd;
+  color:#e27802;
+}
+footer{
+  text-align: center;
+  font-family: 'Montserrat', sans-serif; 
+  color: #bbbbbb ;
+}
+footer h4{
+  padding: 10px;
+}
+
+
+
+
+/*----------------------------------------------------------------------MAX-WİDTH = 1024PX ----------------------------------------------------------------------*/
+
+@media screen and (max-width: 1024px){
+  .navbar{
+    display: none;
+  }
+  .topnav {
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    z-index: 999;
+    display:flex;
+  }
+  .topnav #myLinks {
+    display: none;
+    margin: 0 auto;
+  }
+  .topnav a {
+    color: #e27802;
+    padding: 14px 10px;
+    text-decoration: none;
+    font-size: 1em;
+    display:block;
+    position: relative;
+  }
+  .topnav a.icon {
+    font-size: 2rem;
+    display: block;
+    position: absolute;
+    color: #e27802 !important;
+    right: 0;
+    
+  }
+  .topnav a:hover {
+    color: #dddddd;
+  }
+  .active{
+    font-size: 2rem !important;
+    color: #e27802;
+  }
+  .gor1-yazi p{
+    font-size: 1.2em;
+    font-weight: 300;
+  }
+  .gor1-yazi span{
+    font-size: 1.2em;
+    font-weight: 100;
+  }
+  .bant1-icerik{
+    flex-direction: column;
+  }
+  .bant1-icerik p{
+    width: 100%;
+    font-size: 1em;
+  }
+  .mimar{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+  }
+  .bant1-icerik h2{
+    margin: 40px;
+  }
+  #gor2{
+    height: auto;
+    flex-wrap: wrap;
+  }
+  .card{
+    width: 200px;
+    height: 360px;
+    flex-wrap: wrap;
+    margin: 20px;
+  }
+  .card-img img{
+    width: 200px;
+    height: 120px;
+  }
+  .card-p{
+    font-size: 0.8rem;
+  }
+  .btn{
+    width: 100px;
+    height: 35px;
+    font-size: 1rem;
+    position: relative;
+    bottom: 10px;
+  }
+  .row{
+    display:flex;
+    flex-direction: column;
+  }
+  
+}
+
+
+/*----------------------------------------------------------------------MAX-WİDTH = 450PX ----------------------------------------------------------------------*/
+
+@media screen and (max-width: 450px){
+  .filter{
+    width: 100%;
+    height: 1760px;
+    background: black;
+    opacity: 0.3;
+    z-index: 0;
+    position:absolute;
+  }
+  .bant1-icerik{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .bant1-icerik p{
+    width: 90%;
+    font-size: 0.7em;
+    line-height: 1.8rem;
+  }
+  .card{
+    width: 300px;
+    height: 400px;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .card-img img{
+    width: 100%;
+    height: 200px;
+  }
+  .btn{
+    width: 120px;
+    height: 50px;
+    bottom: 80px;
+  }
+}
+
+
+
+
+
+
+
+
+

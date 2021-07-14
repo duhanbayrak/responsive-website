@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="shortcut icon" type="image/png" href="/img/favicon.png"/>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Project-1</title>
+</head>
+<style>
+
+*{
+    padding: 0;
+    margin: 0;        
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: #dddddd;
+}
+.topnav{
+  display:none;
+}
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items:center; 
+  font-family: 'Montserrat', sans-serif;
+  position:fixed;
+  z-index: 1;
+}
+.navbar .logo a{
+  font-size: 3rem;
+  color: #e27802;
+  display: inline-block;
+  padding-left:20px;
+}
+.navbar .navbar-link{
+  color: #e27802;
+  font-size: 1.8em;
+  padding: 50px 50px;
+  position: relative;
+  left: 150px;
+}
+.navbar a:hover{
+  color:#374045;
+  transition: 800ms;
+}
+.navbar a:active{
+  color:#e27802;
+}
+.container{
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 120px;
+    margin: 0 auto; 
+}
+.icerik{
+    display: flex;
+    flex-direction: column;
+    line-height: 4rem; 
+}
+.icerik h2{
+    font-size: 2rem;
+    color: #374045;
+    margin-bottom:50px ;
+}
+.icerik h3{
+    font-weight: 350;
+}
+.icerik h3 span{
+    font-weight: 500;
+}
+.icerik h3 span a{
+    text-decoration: none;
+    color: #374045;
+    border-bottom:1px solid;
+}
+.icerik h3 span a:hover{
+    color:#e27802;
+}
+.project-img{
+    width: 50%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;  
+}
+.project-img img{
+    margin-bottom: 20px;
+    height: 400px;
+}
+
+
+
+
+
+@media screen and (max-width: 1024px){
+    
+    .navbar{
+        display:none;
+    }
+    .topnav {
+        width: 100%;
+        overflow: hidden;
+        position: absolute;
+        z-index: 999;
+        display:flex;
+    }
+    .topnav #myLinks {
+        display: none;
+        margin: 0 auto;
+    }
+    .topnav a {
+        color: #e27802;
+        padding: 14px 10px;
+        text-decoration: none;
+        font-size: 1em;
+        display:block;
+        position: relative;
+    }
+    .topnav a.icon {
+        font-size: 2rem;
+        display: block;
+        position: absolute;
+        color: #e27802 !important;
+        right: 0;
+    
+    }
+    .topnav a:hover {
+        color: #dddddd;
+    }
+    .active{
+        font-size: 2rem !important;
+        color: #e27802;
+  }
+  .container{
+      flex-direction: column;
+  }
+  .project-img{
+      width: 90%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+<body>
+    <nav class="navbar animate__animated animate__fadeInLeft">
+        <div class="logo">
+            <a href="#gor1">SantrArchitect</a>
+        </div>
+        <a class="navbar-link" href="index.html">Home</a>
+        <a class="navbar-link" href="#bant1">About Us</a>
+        <a class="navbar-link" href="#gor2">Projects</a>
+        <a class="navbar-link" href="#bant2">Contact</a>
+      </nav>
+      <div class="topnav animate__animated animate__fadeInDown">
+        <a href="#home" class="active">SantrArchitect</a>
+        
+        <div  id="myLinks" class="animate__animated animate__fadeInDown">
+          <a  href="index.html">Home</a>
+          <a  href="index.html">About Us</a>
+          <a  href="index.html">Projects</a>
+          <a  href="index.html">Contact</a>
+        </div>
+       
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+       
+      <div class="container">
+        
+          <div class="icerik">
+            <h2>Kastamonu Ofis Projesi</h2>    
+            <h3>Proje Metni:  <span><a href="#">Tıklayınız</a></span></h3>
+            <h3>Durum: <span>Tamamlandı</span></h3>
+            <h3>Ekip: <span>Şeyda Naharoğlu, Beraet Uçar</span></h3>
+            <h3>Tip: <span>Ofis</span></h3>
+            <h3>İnşaat Alanı: <span>3.240 M²</span></h3>
+            <h3>Yer: <span>Kastamonu/Şenpazar</span></h3>
+            <h3>Yıl: <span>2019-2020</span></h3>
+          </div>
+
+          <div class="project-img">
+              <img src="/img/card-1.jpg" alt="">
+              <img src="http://cmmimarlik.com.tr/wp-content/uploads/2020/09/gemak-altinova-idari-f07.jpg" alt="">
+              <img src="http://cmmimarlik.com.tr/wp-content/uploads/2020/09/gemak-altinova-idari-f11.jpg" alt="">
+              <img src="http://cmmimarlik.com.tr/wp-content/uploads/2020/09/gemak-altinova-idari-2.jpg" alt="">
+          </div>
+      </div>
+
+      
+    
+
+
+
+
+
+      <script src="app.js"></script>
+</body>
+</html>
